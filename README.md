@@ -12,14 +12,13 @@ To simulate locally how Mixmax calls the resolver URL (to return HTML that goes 
 ```
 curl http://localhost:9146/resolver?url=https://www.eventbrite.com/e/mit-sloan-sports-analytics-conference-2017-tickets-5414123790
 ```
-To simulate on Mixmax Dashboard,
+## Running locally with Mixmax Dashboard
 
-1.Open up the Mixmax Dashboard, click Settings, click Integrations, and click Add Link Resolver.
+1. Open up the Mixmax Dashboard, click Settings, click Integrations, and click Add Link Resolver
 2. Enter the following for the parameters:
 
 Input name:	 Eventbrite (eventbrite.com/e/*)
 Regular Expression: eventbrite.com/e/[^\/]+-[^\/]+$
-
 Resolver URL: http://localhost:9146/resolver
 
 
