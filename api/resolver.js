@@ -35,7 +35,6 @@ module.exports = function(req, res) {
   }
   var result = JSON.parse(response.body);
   var image = result.logo.original;
-  var width = image.width > 600 ? 600 : image.width;
   var eventName = result.name.text;
   var eventUrl = result.url;
   var eventImageUrl = image.url;
@@ -119,6 +118,7 @@ module.exports = function(req, res) {
          </td>
         </tr>
       </tbody></table>`;
+      console.log("HTML Generated");
   res.json({
     body: html
     // Add raw:true if you're returning content that you want the user to be able to edit
